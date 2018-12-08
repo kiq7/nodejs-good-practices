@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:unit": "jest test/unit",
-    "test:integration": "jest test/integration",
+    "test:integration": "jest test/integration --setupTestFrameworkScriptFile ./test/setupIntegration.js",
     "sequelize": "sequelize"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "mysql2": "^1.6.4",
     "sequelize-cli": "^5.4.0"
   },
