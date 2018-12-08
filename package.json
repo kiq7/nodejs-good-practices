@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:unit": "jest test/unit",
     "test:integration": "jest test/integration --setupTestFrameworkScriptFile ./test/setupIntegration.js",
+    "test:e2e": "jest test/e2e --setupTestFrameworkScriptFile ./test/setupIntegration.js",
     "sequelize": "sequelize",
     "web": "node web.js",
     "web:dev": "nodemon web.js"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "jest": "^23.6.0",
     "nodemon": "^1.18.7",
-    "sequelize": "^4.41.2"
+    "sequelize": "^4.41.2",
+    "supertest": "^3.3.0"
   }
 }
